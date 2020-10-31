@@ -1,0 +1,20 @@
+[
+    {
+        "item":"新任务",
+        "image":"barItem_NewTask_nor",
+        "imageSelected":"barItem_NewTask_select",
+        "tag":"0"
+    },
+    {
+        "item":"已完成",
+        "image":"barItem_EndTask_nor",
+        "imageSelected":"barItem_EndTask_select",
+        "tag":"1"
+    },
+    {
+        "item":"身份设置",
+        "image":"barItem_IdentitySetting_nor",
+        "imageSelected":"barItem_IdentitySetting_select",
+        "tag":"2"
+    }
+]
