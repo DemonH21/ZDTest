@@ -16,12 +16,13 @@ class WLHomeTabbarController: UITabBarController {
 //        self.setBarItem()
         self.setTabbarViewControllers()
         self.view.backgroundColor = Color_White
+        
     }
     
     func setTabbarViewControllers() {
         let itemArr = self.readItemData()
         let temArr: NSMutableArray? = []
-        for dic: NSDictionary in itemArr {
+        for dic in itemArr {
             let nav = WLBaseNavigationController()
             nav.tabBarItem = self.setBarItem(title: dic["item"] as! String, image: dic["image"] as! String, imageSelect: dic["imageSelected"] as! String, tag: dic["tag"] as! String)
             temArr?.add(nav)
@@ -32,13 +33,13 @@ class WLHomeTabbarController: UITabBarController {
         let barItem = UITabBarItem(title: title, image: UIImage(named: image), tag: (tag as NSString).integerValue)
         barItem.image = UIImage(named: image)?.withRenderingMode(.alwaysOriginal)
         barItem.selectedImage = UIImage(named: imageSelect)?.withRenderingMode(.alwaysOriginal)
-        barItem.setTitleTextAttributes([NSAttributedString.Key.foregroundColor : Color_Base], for: .selected)
+        barItem.setTitleTextAttributes([NSAttributedString.Key.foregroundColor : Color_Base,NSAttributedString.Key.font: UIFont.systemFont(ofSize: CGFloat(Font_tabbarItem))], for: .selected)
         return barItem
         
         
         
     }
-    func readItemData() -> [NSDictionary] {
+    func readItemData() -> Array<NSDictionary> {
         let path = Bundle.main.path(forResource: "barItem_list", ofType: "json")
         let url = URL(fileURLWithPath: path!)
         do {
