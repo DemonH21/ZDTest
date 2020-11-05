@@ -13,6 +13,6 @@ let Color_Base = UIColor(hexString: "29a1f7")
 
 
 
-let Font_tabbarItem = 16.0
+let Font_tabbarItem = 14.0
 
 

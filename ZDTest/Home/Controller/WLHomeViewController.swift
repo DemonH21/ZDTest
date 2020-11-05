@@ -7,7 +7,7 @@
 
 import UIKit
 
-class WLHomeViewController: UIViewController {
+class WLHomeViewController: WLBaseViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -15,7 +15,7 @@ class WLHomeViewController: UIViewController {
         // Do any additional setup after loading the view.
         self.setTabbarController()
         self.view.backgroundColor = Color_White
-        print("你好啊")
+        self.navigationItem.title = "首页"
     }
     func setTabbarController() {
         let tabVc = WLHomeTabbarController()

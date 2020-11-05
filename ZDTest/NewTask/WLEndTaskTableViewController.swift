@@ -1,21 +1,20 @@
 //
-//  WLQiShiTaskViewController.swift
+//  WLEndTaskTableViewController.swift
 //  ZDTest
 //
-//  Created by Perfector on 2020/10/31.
+//  Created by kede Han on 2020/11/5.
 //
 
 import UIKit
 
-class WLQiShiTaskViewController: WLBaseViewController {
+class WLEndTaskTableViewController: WLBaseViewController {
 
     lazy var tableView: UITableView = {
-        let tableView = UITableView(frame: self.view.bounds, style: .plain)
-        tableView.dataSource = self
+        let tableView = UITableView(frame: self.view.frame, style: .plain)
         tableView.delegate = self
+        tableView.dataSource = self
         return tableView
     }()
-    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -39,22 +38,26 @@ class WLQiShiTaskViewController: WLBaseViewController {
         super.viewDidDisappear(animated)
         print("viewDidDisappear")
     }
+    
+
 }
-extension WLQiShiTaskViewController: UITableViewDataSource {
+
+extension WLEndTaskTableViewController: UITableViewDelegate{
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 44
+    }
+}
+extension WLEndTaskTableViewController: UITableViewDataSource{
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return 10
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = UITableViewCell()
-        cell.textLabel?.text = "index:"+String(indexPath.row)
+        cell.textLabel?.text = "endTask"
         return cell
+        
     }
     
-
-}
-extension WLQiShiTaskViewController: UITableViewDelegate{
-    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 44
-    }
+    
 }

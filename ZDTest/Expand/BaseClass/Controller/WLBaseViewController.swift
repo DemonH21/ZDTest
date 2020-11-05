@@ -13,17 +13,14 @@ class WLBaseViewController: UIViewController {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        self.setNaviTintColor()
     }
-    
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    func setNaviTintColor() {
+        self.navigationController?.navigationBar.barTintColor = Color_Base
+        self.navigationController?.navigationBar.backgroundColor = Color_White
+        self.navigationController?.navigationBar.isTranslucent = false
+        self.navigationController?.navigationBar.alpha = 1.0
+        self.navigationController?.navigationBar.titleTextAttributes = [NSAttributedString.Key.foregroundColor: Color_White,NSAttributedString.Key.font: UIFont.systemFont(ofSize: 18)]
+        
     }
-    */
-
 }
