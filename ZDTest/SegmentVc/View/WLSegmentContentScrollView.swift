@@ -7,6 +7,10 @@
 
 import UIKit
 
+@objc protocol WLSegmentContentScrollViewDelegate: NSObjectProtocol{
+    @objc func segmentContentScrollView(segmentView: WLSegmentContentScrollView, index: Int)
+}
+
 class WLSegmentContentScrollView: UIView{
 
     
@@ -15,6 +19,7 @@ class WLSegmentContentScrollView: UIView{
     var previousVc: UIViewController?
     var previousVcIndex:Int = -1
     var startOffset: CGFloat = 0.0
+    weak var segmentDelegate: WLSegmentContentScrollViewDelegate?
     
     
     lazy var scrollView: UIScrollView = {
@@ -22,7 +27,7 @@ class WLSegmentContentScrollView: UIView{
         scrollView.bounces = false
         scrollView.delegate = self
         scrollView.frame = self.bounds
-        scrollView.showsVerticalScrollIndicator = false
+        scrollView.showsHorizontalScrollIndicator = false
         scrollView.showsVerticalScrollIndicator = false
         scrollView.isPagingEnabled = true
         let contentWidth = CGFloat(self.childVcs.count)*self.frame.width
@@ -30,12 +35,12 @@ class WLSegmentContentScrollView: UIView{
         return scrollView
     }()
     
-    init(frame: CGRect, childVcs: [UIViewController],parentVc: UIViewController){
+    init(frame: CGRect, childVcs: [UIViewController],parentVc: UIViewController, segmentDelegate: WLSegmentContentScrollViewDelegate){
         super.init(frame: frame)
         self.parentVc = parentVc
         self.childVcs = childVcs
         self.setup()
-        
+        self.segmentDelegate = segmentDelegate
     }
     func setup() {
         let temView = UIView()
@@ -55,9 +60,8 @@ class WLSegmentContentScrollView: UIView{
 //MARK: -
 extension WLSegmentContentScrollView{
     func setChildVcWithCurrentSelectedIndex(currentSelectedIndex: Int)  {
-        //第一次添加子控制器
         let currentVc: UIViewController = self.childVcs[currentSelectedIndex]
-        self.startOffset = self.startOffset + self.frame.width * CGFloat(currentSelectedIndex)
+        self.startOffset = self.frame.width * CGFloat(currentSelectedIndex)
         let currentVcPoint = CGPoint(x: self.startOffset, y: 0)
         if self.previousVc != nil {
             self.previousVc?.beginAppearanceTransition(false, animated: false)
@@ -105,6 +109,10 @@ extension WLSegmentContentScrollView: UIScrollViewDelegate{
         self.previousVc?.endAppearanceTransition() 
         currentVc.endAppearanceTransition()
         self.previousVc = currentVc
+        
+        if (segmentDelegate?.responds(to: #selector(segmentDelegate?.segmentContentScrollView(segmentView:index:))))! {
+            segmentDelegate?.segmentContentScrollView(segmentView: self, index: currentIndex)
+        }
     }
     func scrollViewDidScroll(_ scrollView: UIScrollView) {
         
