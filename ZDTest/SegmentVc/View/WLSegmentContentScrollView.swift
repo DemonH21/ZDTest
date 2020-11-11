@@ -8,6 +8,7 @@
 import UIKit
 
 @objc protocol WLSegmentContentScrollViewDelegate: NSObjectProtocol{
+    @objc func segmentContentScrollView(segmentView: WLSegmentContentScrollView, targetIndex: Int, previousIndex: Int , progress: CGFloat)
     @objc func segmentContentScrollView(segmentView: WLSegmentContentScrollView, index: Int)
 }
 
@@ -60,62 +61,91 @@ class WLSegmentContentScrollView: UIView{
 //MARK: -
 extension WLSegmentContentScrollView{
     func setChildVcWithCurrentSelectedIndex(currentSelectedIndex: Int)  {
-        let currentVc: UIViewController = self.childVcs[currentSelectedIndex]
-        self.startOffset = self.frame.width * CGFloat(currentSelectedIndex)
-        let currentVcPoint = CGPoint(x: self.startOffset, y: 0)
-        if self.previousVc != nil {
-            self.previousVc?.beginAppearanceTransition(false, animated: false)
+        let currentVc: UIViewController = childVcs[currentSelectedIndex]
+        startOffset = self.frame.width * CGFloat(currentSelectedIndex)
+        let currentVcPoint = CGPoint(x: startOffset, y: 0)
+        if previousVc != nil {
+            previousVc?.beginAppearanceTransition(false, animated: false)
         }
-        if !(self.parentVc?.children.contains(currentVc))!{
-            self.parentVc?.addChild(currentVc)
-            self.scrollView.addSubview(currentVc.view)
+        var firstAdd: Bool = false
+        if !(parentVc?.children.contains(currentVc))!{
+            parentVc?.addChild(currentVc)
+            scrollView.addSubview(currentVc.view)
             currentVc.view.frame = CGRect(origin: currentVcPoint, size: self.bounds.size)
-            currentVc.didMove(toParent: self.parentVc)
-            self.previousVc = currentVc
+            currentVc.didMove(toParent: parentVc)
+            firstAdd = true
+            
         }
-        currentVc.beginAppearanceTransition(true, animated: false)
+        if !firstAdd {
+            currentVc.beginAppearanceTransition(true, animated: false)
+        }
         
-        self.scrollView.setContentOffset(currentVcPoint, animated: false)
-        if self.previousVc != nil {
-            self.previousVc?.endAppearanceTransition()
+        
+        scrollView.setContentOffset(currentVcPoint, animated: false)
+        if previousVc != nil {
+            previousVc?.endAppearanceTransition()
         }
-        currentVc.endAppearanceTransition()
+        previousVc = currentVc
+        if !firstAdd {
+            currentVc.endAppearanceTransition()
+        }
+        
+        if (segmentDelegate?.responds(to: #selector(segmentDelegate?.segmentContentScrollView(segmentView:index:))))! {
+            segmentDelegate?.segmentContentScrollView(segmentView: self, index: currentSelectedIndex)
+        }
     }
 }
 
 //MARK: -UIScrollViewDelegate
 extension WLSegmentContentScrollView: UIScrollViewDelegate{
     func scrollViewWillBeginDragging(_ scrollView: UIScrollView) {
-        
+        print("1")
     }
     func scrollViewDidEndDecelerating(_ scrollView: UIScrollView) {
-        
+        print("2")
         let offset = self.scrollView.contentOffset.x
         if offset == self.startOffset {
             return
         }
-        self.previousVc?.beginAppearanceTransition(false, animated: false)
-        
+        previousVc?.beginAppearanceTransition(false, animated: false)
         let currentIndex = Int(offset / self.bounds.width)
         let currentVc = self.childVcs[currentIndex]
-        self.startOffset = offset
+        startOffset = offset
         if !(parentVc?.children.contains(currentVc))! {
-            self.parentVc?.addChild(currentVc)
-            self.scrollView.addSubview(currentVc.view)
+            parentVc?.addChild(currentVc)
+            scrollView.addSubview(currentVc.view)
             currentVc.view.frame = CGRect(origin: CGPoint(x: offset, y: 0), size: self.frame.size)
-            currentVc.didMove(toParent: self.parentVc)
+            currentVc.didMove(toParent: parentVc)
         }
         currentVc.beginAppearanceTransition(true, animated: false)
-        self.previousVc?.endAppearanceTransition() 
+        previousVc?.endAppearanceTransition() 
         currentVc.endAppearanceTransition()
-        self.previousVc = currentVc
+        previousVc = currentVc
         
         if (segmentDelegate?.responds(to: #selector(segmentDelegate?.segmentContentScrollView(segmentView:index:))))! {
             segmentDelegate?.segmentContentScrollView(segmentView: self, index: currentIndex)
         }
+ 
     }
     func scrollViewDidScroll(_ scrollView: UIScrollView) {
-        
-        
+        var progress: CGFloat = (startOffset - scrollView.contentOffset.x) / self.frame.width
+        var targetIndex: Int = 0
+        var previousIndex: Int = 0
+        //向左
+        if progress == 0 {
+            return
+        }
+        if progress > 0{
+            targetIndex = Int(startOffset / self.frame.width) - 1
+            previousIndex = targetIndex + 1
+        }else{
+            targetIndex = Int(startOffset / self.frame.width) + 1
+            progress = -progress
+            previousIndex = targetIndex - 1
+        }
+        if (segmentDelegate?.responds(to: #selector(segmentDelegate?.segmentContentScrollView(segmentView:targetIndex:previousIndex:progress:))))! {
+            segmentDelegate?.segmentContentScrollView(segmentView: self, targetIndex: targetIndex,previousIndex: previousIndex,progress: progress)
+        }
+//        print("progress\(progress)")
     }
 }

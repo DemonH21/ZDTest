@@ -15,6 +15,7 @@ let kNaviBarItem_height: CGFloat = 44
 let kNaviBar_height = kStatusBar_height + kNaviBarItem_height
 let kTabbar_height: CGFloat = kStatusBar_height > 20 ? 83 : 49
 
+let kSeparateLine_height: CGFloat = 0.5
 
 
 

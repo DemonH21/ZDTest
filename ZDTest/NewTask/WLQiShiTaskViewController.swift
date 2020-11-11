@@ -23,26 +23,11 @@ class WLQiShiTaskViewController: WLBaseViewController {
         self.view.addSubview(self.tableView)
     }
     
-    override func viewWillAppear(_ animated: Bool) {
-        super.viewDidAppear(animated)
-        print("viewWillAppear")
-    }
-    override func viewDidAppear(_ animated: Bool) {
-        super.viewDidAppear(animated)
-        print("viewDidAppear")
-    }
-    override func viewWillDisappear(_ animated: Bool) {
-        super.viewDidDisappear(animated)
-        print("viewWillDisappear")
-    }
-    override func viewDidDisappear(_ animated: Bool) {
-        super.viewDidDisappear(animated)
-        print("viewDidDisappear")
-    }
+
 }
 extension WLQiShiTaskViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 10
+        return 40
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
