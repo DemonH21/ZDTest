@@ -3,11 +3,11 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
-		9E461A4719920D62DE2646E2 /* Pods_ZDTestTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A5F416119B53576AAE7092D /* Pods_ZDTestTests.framework */; };
+		0C1AF646514C179D746D31E2 /* Pods_ZDTest_ZDTestTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 60403E83C29F5645A4763E40 /* Pods_ZDTest_ZDTestTests.framework */; };
 		A830105B254D656300E68C2A /* iphone-x-max.png in Resources */ = {isa = PBXBuildFile; fileRef = A830105A254D656300E68C2A /* iphone-x-max.png */; };
 		A8301066254D67E600E68C2A /* WLHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8301065254D67E600E68C2A /* WLHomeViewController.swift */; };
 		A8301076254D686D00E68C2A /* WLHomeTabbarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8301075254D686D00E68C2A /* WLHomeTabbarController.swift */; };
@@ -33,7 +33,9 @@
 		B73DA39A2553E29400E3BB08 /* WLEndTaskTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B73DA3992553E29400E3BB08 /* WLEndTaskTableViewController.swift */; };
 		B73DA39F2553EA2E00E3BB08 /* WLSegmentBtnScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B73DA39E2553EA2E00E3BB08 /* WLSegmentBtnScrollView.swift */; };
 		B73DA3A42558D85800E3BB08 /* WLSegmentViewConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = B73DA3A32558D85800E3BB08 /* WLSegmentViewConfiguration.swift */; };
-		D787349D9DFF3FAE7ED0C423 /* Pods_ZDTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5CEA735C4E92664B2861BDC6 /* Pods_ZDTest.framework */; };
+		B77DE274255E783A002281CE /* WLLoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B77DE271255E783A002281CE /* WLLoginViewController.swift */; };
+		B77DE2A9255E7CF3002281CE /* Pods_ZDTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B77DE2A8255E7CF3002281CE /* Pods_ZDTest.framework */; };
+		B77DE2AA255E7CF3002281CE /* Pods_ZDTest.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B77DE2A8255E7CF3002281CE /* Pods_ZDTest.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		F455561BE2B64BB55645A7EA /* Pods_ZDTest_ZDTestUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 711A8E95C13439022F13C8E2 /* Pods_ZDTest_ZDTestUITests.framework */; };
 /* End PBXBuildFile section */
 
@@ -54,15 +56,34 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		B77DE2AB255E7CF3002281CE /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				B77DE2AA255E7CF3002281CE /* Pods_ZDTest.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		1266D0B1180097E6319A1CE5 /* Pods-ZDTestTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZDTestTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ZDTestTests/Pods-ZDTestTests.release.xcconfig"; sourceTree = "<group>"; };
+		1CC3DC8972A0F5B652080380 /* Pods-ZDTest-ZDTestUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZDTest-ZDTestUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ZDTest-ZDTestUITests/Pods-ZDTest-ZDTestUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		2EBCD4ACDA2902AEB5134055 /* Pods-ZDTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZDTest.release.xcconfig"; path = "Target Support Files/Pods-ZDTest/Pods-ZDTest.release.xcconfig"; sourceTree = "<group>"; };
+		31BFF41525E2ACDAA3770BB9 /* Pods-ZDTest-ZDTestTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZDTest-ZDTestTests.release.xcconfig"; path = "Target Support Files/Pods-ZDTest-ZDTestTests/Pods-ZDTest-ZDTestTests.release.xcconfig"; sourceTree = "<group>"; };
+		4432EBB7A16D215F941967B2 /* Pods-ZDTest-ZDTestUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZDTest-ZDTestUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ZDTest-ZDTestUITests/Pods-ZDTest-ZDTestUITests.release.xcconfig"; sourceTree = "<group>"; };
 		46F85FFDBC447B94FFEF4816 /* Pods-ZDTest-ZDTestUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZDTest-ZDTestUITests.release.xcconfig"; path = "Target Support Files/Pods-ZDTest-ZDTestUITests/Pods-ZDTest-ZDTestUITests.release.xcconfig"; sourceTree = "<group>"; };
-		4A5F416119B53576AAE7092D /* Pods_ZDTestTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ZDTestTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4A7B60913E36A81736C2EB7B /* Pods-ZDTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZDTest.debug.xcconfig"; path = "Target Support Files/Pods-ZDTest/Pods-ZDTest.debug.xcconfig"; sourceTree = "<group>"; };
 		583AD4C5C09AFA9FF8F3B7FB /* Pods-ZDTestTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZDTestTests.debug.xcconfig"; path = "Target Support Files/Pods-ZDTestTests/Pods-ZDTestTests.debug.xcconfig"; sourceTree = "<group>"; };
 		5CEA735C4E92664B2861BDC6 /* Pods_ZDTest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ZDTest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		60403E83C29F5645A4763E40 /* Pods_ZDTest_ZDTestTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ZDTest_ZDTestTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		711A8E95C13439022F13C8E2 /* Pods_ZDTest_ZDTestUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ZDTest_ZDTestUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		93A711EF7789692BC48C03B6 /* Pods-ZDTestTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZDTestTests.release.xcconfig"; path = "Target Support Files/Pods-ZDTestTests/Pods-ZDTestTests.release.xcconfig"; sourceTree = "<group>"; };
+		9B9A78D5CB89B814E7EE0375 /* Pods-ZDTestTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZDTestTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ZDTestTests/Pods-ZDTestTests.debug.xcconfig"; sourceTree = "<group>"; };
 		A830105A254D656300E68C2A /* iphone-x-max.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "iphone-x-max.png"; sourceTree = "<group>"; };
 		A8301065254D67E600E68C2A /* WLHomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WLHomeViewController.swift; sourceTree = "<group>"; };
 		A8301075254D686D00E68C2A /* WLHomeTabbarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WLHomeTabbarController.swift; sourceTree = "<group>"; };
@@ -94,6 +115,15 @@
 		B73DA3992553E29400E3BB08 /* WLEndTaskTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WLEndTaskTableViewController.swift; sourceTree = "<group>"; };
 		B73DA39E2553EA2E00E3BB08 /* WLSegmentBtnScrollView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WLSegmentBtnScrollView.swift; sourceTree = "<group>"; };
 		B73DA3A32558D85800E3BB08 /* WLSegmentViewConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WLSegmentViewConfiguration.swift; sourceTree = "<group>"; };
+		B77DE271255E783A002281CE /* WLLoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WLLoginViewController.swift; sourceTree = "<group>"; };
+		B77DE278255E7927002281CE /* Pods_ZDTest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Pods_ZDTest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B77DE281255E7961002281CE /* SnapKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = SnapKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B77DE294255E7AF0002281CE /* Pods_ZDTest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Pods_ZDTest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B77DE2A0255E7CB6002281CE /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		B77DE2A8255E7CF3002281CE /* Pods_ZDTest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Pods_ZDTest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D1C2B238C1AFC963D22DCB23 /* Pods-ZDTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZDTest.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ZDTest/Pods-ZDTest.debug.xcconfig"; sourceTree = "<group>"; };
+		EF47741639B88A9D7D8392A2 /* Pods-ZDTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZDTest.release.xcconfig"; path = "Pods/Target Support Files/Pods-ZDTest/Pods-ZDTest.release.xcconfig"; sourceTree = "<group>"; };
+		F0B4A91288302DB6A74C4D0A /* Pods-ZDTest-ZDTestTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZDTest-ZDTestTests.debug.xcconfig"; path = "Target Support Files/Pods-ZDTest-ZDTestTests/Pods-ZDTest-ZDTestTests.debug.xcconfig"; sourceTree = "<group>"; };
 		FCEEE1B20266F56C350C1BDB /* Pods-ZDTest-ZDTestUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZDTest-ZDTestUITests.debug.xcconfig"; path = "Target Support Files/Pods-ZDTest-ZDTestUITests/Pods-ZDTest-ZDTestUITests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -102,7 +132,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D787349D9DFF3FAE7ED0C423 /* Pods_ZDTest.framework in Frameworks */,
+				B77DE2A9255E7CF3002281CE /* Pods_ZDTest.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -110,7 +140,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9E461A4719920D62DE2646E2 /* Pods_ZDTestTests.framework in Frameworks */,
+				0C1AF646514C179D746D31E2 /* Pods_ZDTest_ZDTestTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -128,9 +158,14 @@
 		A1571E0C45F10461CF94C458 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				B77DE2A8255E7CF3002281CE /* Pods_ZDTest.framework */,
+				B77DE2A0255E7CB6002281CE /* UIKit.framework */,
+				B77DE294255E7AF0002281CE /* Pods_ZDTest.framework */,
+				B77DE281255E7961002281CE /* SnapKit.framework */,
+				B77DE278255E7927002281CE /* Pods_ZDTest.framework */,
 				5CEA735C4E92664B2861BDC6 /* Pods_ZDTest.framework */,
 				711A8E95C13439022F13C8E2 /* Pods_ZDTest_ZDTestUITests.framework */,
-				4A5F416119B53576AAE7092D /* Pods_ZDTestTests.framework */,
+				60403E83C29F5645A4763E40 /* Pods_ZDTest_ZDTestTests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -279,6 +314,7 @@
 		A8E01BE3254CFFF80058FA72 /* ZDTest */ = {
 			isa = PBXGroup;
 			children = (
+				B77DE26E255E783A002281CE /* Login */,
 				B73DA38925528BB900E3BB08 /* SegmentVc */,
 				A83010A8254D970B00E68C2A /* IdentitySetting */,
 				A83010A7254D969600E68C2A /* EndTask */,
@@ -342,6 +378,46 @@
 			path = View;
 			sourceTree = "<group>";
 		};
+		B77DE26E255E783A002281CE /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				B77DE26F255E783A002281CE /* ViewModel */,
+				B77DE270255E783A002281CE /* Controller */,
+				B77DE272255E783A002281CE /* Model */,
+				B77DE273255E783A002281CE /* View */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		B77DE26F255E783A002281CE /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		B77DE270255E783A002281CE /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				B77DE271255E783A002281CE /* WLLoginViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		B77DE272255E783A002281CE /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		B77DE273255E783A002281CE /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		BCE0A83996959436DCEC8753 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -351,6 +427,14 @@
 				46F85FFDBC447B94FFEF4816 /* Pods-ZDTest-ZDTestUITests.release.xcconfig */,
 				583AD4C5C09AFA9FF8F3B7FB /* Pods-ZDTestTests.debug.xcconfig */,
 				93A711EF7789692BC48C03B6 /* Pods-ZDTestTests.release.xcconfig */,
+				D1C2B238C1AFC963D22DCB23 /* Pods-ZDTest.debug.xcconfig */,
+				EF47741639B88A9D7D8392A2 /* Pods-ZDTest.release.xcconfig */,
+				1CC3DC8972A0F5B652080380 /* Pods-ZDTest-ZDTestUITests.debug.xcconfig */,
+				4432EBB7A16D215F941967B2 /* Pods-ZDTest-ZDTestUITests.release.xcconfig */,
+				9B9A78D5CB89B814E7EE0375 /* Pods-ZDTestTests.debug.xcconfig */,
+				1266D0B1180097E6319A1CE5 /* Pods-ZDTestTests.release.xcconfig */,
+				F0B4A91288302DB6A74C4D0A /* Pods-ZDTest-ZDTestTests.debug.xcconfig */,
+				31BFF41525E2ACDAA3770BB9 /* Pods-ZDTest-ZDTestTests.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -366,6 +450,7 @@
 				A8E01BDD254CFFF80058FA72 /* Sources */,
 				A8E01BDE254CFFF80058FA72 /* Frameworks */,
 				A8E01BDF254CFFF80058FA72 /* Resources */,
+				B77DE2AB255E7CF3002281CE /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -384,6 +469,7 @@
 				A8E01BF3254CFFFE0058FA72 /* Sources */,
 				A8E01BF4254CFFFE0058FA72 /* Frameworks */,
 				A8E01BF5254CFFFE0058FA72 /* Resources */,
+				7533768113909593BF4EFC45 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -487,20 +573,33 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		A397660E2E6DB34D96516901 /* [CP] Check Pods Manifest.lock */ = {
+		7533768113909593BF4EFC45 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ZDTest-ZDTestTests/Pods-ZDTest-ZDTestTests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ZDTest-ZDTestTests/Pods-ZDTest-ZDTestTests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ZDTest-ZDTestTests/Pods-ZDTest-ZDTestTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A397660E2E6DB34D96516901 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			inputPaths = (
 				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
 				"${PODS_ROOT}/Manifest.lock",
 			);
 			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
 			outputPaths = (
 				"$(DERIVED_FILE_DIR)/Pods-ZDTest-checkManifestLockResult.txt",
 			);
@@ -514,17 +613,13 @@
 			buildActionMask = 2147483647;
 			files = (
 			);
-			inputFileListPaths = (
-			);
 			inputPaths = (
 				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
 				"${PODS_ROOT}/Manifest.lock",
 			);
 			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-ZDTestTests-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-ZDTest-ZDTestTests-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -536,15 +631,11 @@
 			buildActionMask = 2147483647;
 			files = (
 			);
-			inputFileListPaths = (
-			);
 			inputPaths = (
 				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
 				"${PODS_ROOT}/Manifest.lock",
 			);
 			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
 			outputPaths = (
 				"$(DERIVED_FILE_DIR)/Pods-ZDTest-ZDTestUITests-checkManifestLockResult.txt",
 			);
@@ -573,6 +664,7 @@
 				A830109D254D962800E68C2A /* WLBaseViewController.swift in Sources */,
 				B73DA39F2553EA2E00E3BB08 /* WLSegmentBtnScrollView.swift in Sources */,
 				A83010BA254DAA4F00E68C2A /* String+.swift in Sources */,
+				B77DE274255E783A002281CE /* WLLoginViewController.swift in Sources */,
 				A830108B254D6CC100E68C2A /* FontAndColorMacro.swift in Sources */,
 				B73DA3A42558D85800E3BB08 /* WLSegmentViewConfiguration.swift in Sources */,
 				A8301076254D686D00E68C2A /* WLHomeTabbarController.swift in Sources */,
@@ -674,7 +766,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -729,7 +821,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -746,6 +838,8 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
+				HEADER_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = ZDTest/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -765,6 +859,8 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
+				HEADER_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = ZDTest/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -779,9 +875,9 @@
 		};
 		A8E01C0F254CFFFF0058FA72 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 583AD4C5C09AFA9FF8F3B7FB /* Pods-ZDTestTests.debug.xcconfig */;
+			baseConfigurationReference = F0B4A91288302DB6A74C4D0A /* Pods-ZDTest-ZDTestTests.debug.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = ZDTestTests/Info.plist;
@@ -801,9 +897,9 @@
 		};
 		A8E01C10254CFFFF0058FA72 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 93A711EF7789692BC48C03B6 /* Pods-ZDTestTests.release.xcconfig */;
+			baseConfigurationReference = 31BFF41525E2ACDAA3770BB9 /* Pods-ZDTest-ZDTestTests.release.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = ZDTestTests/Info.plist;
@@ -825,7 +921,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = FCEEE1B20266F56C350C1BDB /* Pods-ZDTest-ZDTestUITests.debug.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = ZDTestUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -845,7 +941,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 46F85FFDBC447B94FFEF4816 /* Pods-ZDTest-ZDTestUITests.release.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = ZDTestUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
