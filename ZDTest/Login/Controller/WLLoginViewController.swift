@@ -77,9 +77,10 @@ class WLLoginViewController: WLBaseViewController {
         codeTextField.rightView = codeTextRightView
         codeTextField.rightViewMode = .always
         codeTextRightView.tag = 200
-        let tapG = UITapGestureRecognizer(target: self, action: #selector(textFieldTapGusture(gues:)))
-        phoneRightView.addGestureRecognizer(tapG)
-        codeTextRightView.addGestureRecognizer(tapG)
+        let tapG1 = UITapGestureRecognizer(target: self, action: #selector(textFieldTapGusture(gues:)))
+        let tapG2 = UITapGestureRecognizer(target: self, action: #selector(textFieldTapGusture(gues:)))
+        phoneRightView.addGestureRecognizer(tapG1)
+        codeTextRightView.addGestureRecognizer(tapG2)
         
         
         let separateLine1 = UIView()
@@ -160,12 +161,14 @@ class WLLoginViewController: WLBaseViewController {
         }else if view?.tag == 200 {
             let rightView = setTextFieldView(imageName: "wl_login_passwd_invisible@")
             rightView.tag = 300
+            
             codeTextField?.rightView = rightView
             codeTextField?.rightViewMode = .always
             
         }else if view?.tag == 300 {
             let rightView = setTextFieldView(imageName: "wl_login_passwd_visible@")
             rightView.tag = 200
+            
             codeTextField?.rightView = rightView
             codeTextField?.rightViewMode = .always
         }
