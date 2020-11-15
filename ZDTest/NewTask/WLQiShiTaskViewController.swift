@@ -42,4 +42,12 @@ extension WLQiShiTaskViewController: UITableViewDelegate{
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 44
     }
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let qishiVc = WLLoginViewController()
+        qishiVc.hidesBottomBarWhenPushed = true
+        self.navigationController?.pushViewController(qishiVc, animated: true)
+        
+        
+        
+    }
 }
