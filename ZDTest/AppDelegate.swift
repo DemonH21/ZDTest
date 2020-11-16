@@ -11,16 +11,17 @@ import UIKit
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
-
+    var window: UIWindow? = nil
+    
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
         if #available(iOS 13.0, *) {
             
         }else{
-            let window = UIWindow.init(frame: UIScreen.main.bounds)
+            self.window = UIWindow.init(frame: UIScreen.main.bounds)
             let homeVc = WLHomeViewController()
-            window.rootViewController = homeVc
-            window.makeKeyAndVisible()
+            self.window?.rootViewController = homeVc
+            self.window?.makeKeyAndVisible()
             
             
         }

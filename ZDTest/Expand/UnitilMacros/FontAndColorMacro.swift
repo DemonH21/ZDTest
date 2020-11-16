@@ -14,6 +14,8 @@ let Color_Black = UIColor(hexString: "333333")
 let Color_MinBlack = UIColor(hexString: "666666")
 let Color_separateLine = UIColor(hexString: "dddddd")
 
+let Color_default_background = UIColor(hexString: "efeff4")
+
 
 
 

@@ -4,8 +4,9 @@ platform :ios, '10.0'
 target 'ZDTest' do
   # Comment the next line if you don't want to use dynamic frameworks
   use_frameworks!
-  pod 'SnapKit', '~> 5.0.1'
-  pod 'Alamofire'
+  pod 'SnapKit', '~> 4.2.0'
+  pod 'Alamofire', '~> 5.3.0'
+  pod 'ByebyeUnicode'
   # Pods for ZDTest
 
   target 'ZDTestTests' do 

@@ -1,0 +1,6 @@
+framework module ByebyeUnicode {
+  umbrella header "ByebyeUnicode-umbrella.h"
+
+  export *
+  module * { export * }
+}
