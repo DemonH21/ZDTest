@@ -8,7 +8,7 @@
 import UIKit
 import SnapKit
 //import Alamofire
-
+//import MBProgressHUD
 class WLLoginViewController: WLBaseViewController {
 
     lazy var scrollView: UIScrollView = {
@@ -24,9 +24,10 @@ class WLLoginViewController: WLBaseViewController {
     var codeRightImageView: UIImageView? = nil
     
     
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
         // Do any additional setup after loading the view.
         setup()
         let tapG = UITapGestureRecognizer(target: self, action: #selector(wl_dismissKeyBoard(gues:)))
@@ -35,6 +36,7 @@ class WLLoginViewController: WLBaseViewController {
     override func viewDidLayoutSubviews() {
         super.viewDidLayoutSubviews()
         scrollView.frame = self.view.bounds
+        
     }
 
     func setup() {
@@ -238,6 +240,23 @@ class WLLoginViewController: WLBaseViewController {
         return button
     }
     @objc func loginBtnAction(button: UIButton) {
+        if phoneTextField?.text?.count == 0 {
+            MBProgressHUD.showInWindow(message: "请输入手机号码")
+            return
+        }
+        
+        if !phoneTextField!.text!.isMobile() {
+            MBProgressHUD.showInWindow(message: "请输入正确的手机号码")
+            return
+        }
+        if codeTextField?.text?.count == 0 {
+            MBProgressHUD.showInWindow(message: "请输入密码")
+            return
+        }
+        if !codeTextField!.text!.isPassword() {
+            MBProgressHUD.showInWindow(message: "请输入大于等于6位小于18位的密码")
+            return
+        }
         
     }
 

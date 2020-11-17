@@ -7,7 +7,7 @@ target 'ZDTest' do
   pod 'SnapKit', '~> 4.2.0'
   pod 'Alamofire', '~> 5.3.0'
   pod 'ByebyeUnicode'
-  # Pods for ZDTest
+  pod 'MBProgressHUD'
 
   target 'ZDTestTests' do 
     

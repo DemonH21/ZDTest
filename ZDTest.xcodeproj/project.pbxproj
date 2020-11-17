@@ -39,6 +39,7 @@
 		B77DE274255E783A002281CE /* WLLoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B77DE271255E783A002281CE /* WLLoginViewController.swift */; };
 		B77DE2A9255E7CF3002281CE /* Pods_ZDTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B77DE2A8255E7CF3002281CE /* Pods_ZDTest.framework */; };
 		B77DE2AA255E7CF3002281CE /* Pods_ZDTest.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B77DE2A8255E7CF3002281CE /* Pods_ZDTest.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		B7EEB85B25637A33008C3ADC /* MBProgressHUD+.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7EEB85A25637A33008C3ADC /* MBProgressHUD+.swift */; };
 		BC626DDD6A2704A98195FE85 /* Pods_ZDTest_ZDTestTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A826D1BF255EABDE003A5CDA /* Pods_ZDTest_ZDTestTests.framework */; };
 		F455561BE2B64BB55645A7EA /* Pods_ZDTest_ZDTestUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 711A8E95C13439022F13C8E2 /* Pods_ZDTest_ZDTestUITests.framework */; };
 		FFE1DD4D05C73964C01AAD77 /* Pods_ZDTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A8B0B4EB255FB5BD00A185CA /* Pods_ZDTest.framework */; };
@@ -126,12 +127,14 @@
 		B73DA3992553E29400E3BB08 /* WLEndTaskTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WLEndTaskTableViewController.swift; sourceTree = "<group>"; };
 		B73DA39E2553EA2E00E3BB08 /* WLSegmentBtnScrollView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WLSegmentBtnScrollView.swift; sourceTree = "<group>"; };
 		B73DA3A32558D85800E3BB08 /* WLSegmentViewConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WLSegmentViewConfiguration.swift; sourceTree = "<group>"; };
+		B77BFC8C25637075002BE07C /* Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "Bridging-Header.h"; path = "ZDTest/Bridging-Header.h"; sourceTree = SOURCE_ROOT; };
 		B77DE271255E783A002281CE /* WLLoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WLLoginViewController.swift; sourceTree = "<group>"; };
 		B77DE278255E7927002281CE /* Pods_ZDTest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Pods_ZDTest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B77DE281255E7961002281CE /* SnapKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = SnapKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B77DE294255E7AF0002281CE /* Pods_ZDTest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Pods_ZDTest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B77DE2A0255E7CB6002281CE /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		B77DE2A8255E7CF3002281CE /* Pods_ZDTest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Pods_ZDTest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B7EEB85A25637A33008C3ADC /* MBProgressHUD+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MBProgressHUD+.swift"; sourceTree = "<group>"; };
 		D1C2B238C1AFC963D22DCB23 /* Pods-ZDTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZDTest.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ZDTest/Pods-ZDTest.debug.xcconfig"; sourceTree = "<group>"; };
 		EF47741639B88A9D7D8392A2 /* Pods-ZDTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZDTest.release.xcconfig"; path = "Pods/Target Support Files/Pods-ZDTest/Pods-ZDTest.release.xcconfig"; sourceTree = "<group>"; };
 		F0B4A91288302DB6A74C4D0A /* Pods-ZDTest-ZDTestTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZDTest-ZDTestTests.debug.xcconfig"; path = "Target Support Files/Pods-ZDTest-ZDTestTests/Pods-ZDTest-ZDTestTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -255,6 +258,7 @@
 				B7131636254FDC8C00CDBB16 /* UIView+.swift */,
 				A8301085254D6C0A00E68C2A /* Color+.swift */,
 				A83010B9254DAA4F00E68C2A /* String+.swift */,
+				B7EEB85A25637A33008C3ADC /* MBProgressHUD+.swift */,
 			);
 			path = Category;
 			sourceTree = "<group>";
@@ -341,6 +345,7 @@
 				A830105F254D667800E68C2A /* Expand */,
 				A8E01BE4254CFFF80058FA72 /* AppDelegate.swift */,
 				A8E01BE6254CFFF80058FA72 /* SceneDelegate.swift */,
+				B77BFC8C25637075002BE07C /* Bridging-Header.h */,
 				A8E01BED254CFFFE0058FA72 /* Assets.xcassets */,
 				A83010A9254D998B00E68C2A /* WLImageAssets.xcassets */,
 				A830105A254D656300E68C2A /* iphone-x-max.png */,
@@ -718,6 +723,7 @@
 				A830109D254D962800E68C2A /* WLBaseViewController.swift in Sources */,
 				B73DA39F2553EA2E00E3BB08 /* WLSegmentBtnScrollView.swift in Sources */,
 				A83010BA254DAA4F00E68C2A /* String+.swift in Sources */,
+				B7EEB85B25637A33008C3ADC /* MBProgressHUD+.swift in Sources */,
 				B77DE274255E783A002281CE /* WLLoginViewController.swift in Sources */,
 				A830108B254D6CC100E68C2A /* FontAndColorMacro.swift in Sources */,
 				B73DA3A42558D85800E3BB08 /* WLSegmentViewConfiguration.swift in Sources */,
@@ -904,9 +910,10 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = Perfector.ZDTest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "ZDTest/Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				USER_HEADER_SEARCH_PATHS = "";
+				USER_HEADER_SEARCH_PATHS = "${SRCROOT}";
 			};
 			name = Debug;
 		};
@@ -927,9 +934,10 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = Perfector.ZDTest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "ZDTest/Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				USER_HEADER_SEARCH_PATHS = "";
+				USER_HEADER_SEARCH_PATHS = "${SRCROOT}";
 			};
 			name = Release;
 		};
