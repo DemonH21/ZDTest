@@ -32,7 +32,41 @@ class WLLoginViewController: WLBaseViewController {
         setup()
         let tapG = UITapGestureRecognizer(target: self, action: #selector(wl_dismissKeyBoard(gues:)))
         scrollView.addGestureRecognizer(tapG)
+        var some = 12
+        var other = 13
+        swapTwoValue(a: &some, b: &other)
+        print("some: \(some), other: \(other)")
+        
+        var some1 = "hello"
+        var other1 = "world"
+        swapTwoValue(a: &some1, b: &other1)
+        print("some: \(some1), other: \(other1)")
+        let arr = ["some", "body", "other", "girl", "boy"]
+        let findV = "body"
+        let index = findSameType(arr: arr, findValue: findV)
+        print(index as Any)
+        let douArr = [3.13, 34, 54, 65]
+        let findV1 = 54.0
+        let index1 = findSameType(arr: douArr, findValue: findV1)
+        print(index1)
+        
     }
+    
+    
+    func swapTwoValue<T>(a: inout T, b: inout T) {
+        let temp = a
+        a = b
+        b = temp
+    }
+    func findSameType<T: Equatable>(arr: [T], findValue: T) -> Int? {
+        for (index, value) in arr.enumerated() {
+            if value == findValue {
+                return index
+            }
+        }
+        return nil
+    }
+    
     override func viewDidLayoutSubviews() {
         super.viewDidLayoutSubviews()
         scrollView.frame = self.view.bounds

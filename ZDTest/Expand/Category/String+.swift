@@ -10,13 +10,13 @@ import Foundation
 extension String {
         
     func isMatch(_ rules: String) -> Bool {
-        let rules = NSPredicate(format: "SELF MATCHES \(rules)")
+        let rules = NSPredicate(format: "SELF MATCHES '\(rules)'")
         let isMatch: Bool = rules.evaluate(with: self)
         return isMatch
     }
     //判断电话号码
     func isMobile() -> Bool {
-        return isMatch("^1([3-9])\\d{9}$")
+        return isMatch("^1[0-9]{10}$")
     }
     //判断身份证是否为18位
     func isUserIdcard() -> Bool {
@@ -34,4 +34,22 @@ extension String {
     func isPassword() -> Bool {
         return isMatch("^(?![0-9]+$)(?![a-zA-Z]+$)[a-zA-Z0-9]{6,18}")
     }
+}
+import CommonCrypto
+extension String {
+    func md5() -> String {
+        let str = self.cString(using: String.Encoding.utf8)
+        let strLen = CUnsignedInt(self.lengthOfBytes(using: String.Encoding.utf8))
+        let digestLen = Int(CC_MD5_DIGEST_LENGTH)
+        let result = UnsafeMutablePointer<CUnsignedChar>.allocate(capacity: digestLen)
+        CC_MD5(str!, strLen, result)
+        let hash = NSMutableString()
+        for i in 0 ..< digestLen {
+            hash.appendFormat("%02x", result[i])
+        }
+        result.deinitialize(count: digestLen)
+        return String(format: hash as String)
+        
+    }
+    
 }

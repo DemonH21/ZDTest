@@ -40,6 +40,7 @@
 		B77DE2A9255E7CF3002281CE /* Pods_ZDTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B77DE2A8255E7CF3002281CE /* Pods_ZDTest.framework */; };
 		B77DE2AA255E7CF3002281CE /* Pods_ZDTest.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B77DE2A8255E7CF3002281CE /* Pods_ZDTest.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		B7EEB85B25637A33008C3ADC /* MBProgressHUD+.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7EEB85A25637A33008C3ADC /* MBProgressHUD+.swift */; };
+		B7EEB8652564B31B008C3ADC /* WLLoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7EEB8642564B31B008C3ADC /* WLLoginViewModel.swift */; };
 		BC626DDD6A2704A98195FE85 /* Pods_ZDTest_ZDTestTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A826D1BF255EABDE003A5CDA /* Pods_ZDTest_ZDTestTests.framework */; };
 		F455561BE2B64BB55645A7EA /* Pods_ZDTest_ZDTestUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 711A8E95C13439022F13C8E2 /* Pods_ZDTest_ZDTestUITests.framework */; };
 		FFE1DD4D05C73964C01AAD77 /* Pods_ZDTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A8B0B4EB255FB5BD00A185CA /* Pods_ZDTest.framework */; };
@@ -135,6 +136,7 @@
 		B77DE2A0255E7CB6002281CE /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		B77DE2A8255E7CF3002281CE /* Pods_ZDTest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Pods_ZDTest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B7EEB85A25637A33008C3ADC /* MBProgressHUD+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MBProgressHUD+.swift"; sourceTree = "<group>"; };
+		B7EEB8642564B31B008C3ADC /* WLLoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WLLoginViewModel.swift; sourceTree = "<group>"; };
 		D1C2B238C1AFC963D22DCB23 /* Pods-ZDTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZDTest.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ZDTest/Pods-ZDTest.debug.xcconfig"; sourceTree = "<group>"; };
 		EF47741639B88A9D7D8392A2 /* Pods-ZDTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZDTest.release.xcconfig"; path = "Pods/Target Support Files/Pods-ZDTest/Pods-ZDTest.release.xcconfig"; sourceTree = "<group>"; };
 		F0B4A91288302DB6A74C4D0A /* Pods-ZDTest-ZDTestTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZDTest-ZDTestTests.debug.xcconfig"; path = "Target Support Files/Pods-ZDTest-ZDTestTests/Pods-ZDTest-ZDTestTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -415,6 +417,7 @@
 		B77DE26F255E783A002281CE /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				B7EEB8642564B31B008C3ADC /* WLLoginViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -719,6 +722,7 @@
 				A8E01BE7254CFFF80058FA72 /* SceneDelegate.swift in Sources */,
 				B73DA3922552925200E3BB08 /* WLSegmentContentScrollView.swift in Sources */,
 				A83010A2254D966A00E68C2A /* WLQiShiTaskViewController.swift in Sources */,
+				B7EEB8652564B31B008C3ADC /* WLLoginViewModel.swift in Sources */,
 				B73DA38D25528C3500E3BB08 /* WLSegmentBaseViewController.swift in Sources */,
 				A830109D254D962800E68C2A /* WLBaseViewController.swift in Sources */,
 				B73DA39F2553EA2E00E3BB08 /* WLSegmentBtnScrollView.swift in Sources */,
