@@ -32,7 +32,9 @@ extension String {
     }
     //判断密码6-18位
     func isPassword() -> Bool {
-        return isMatch("^(?![0-9]+$)(?![a-zA-Z]+$)[a-zA-Z0-9]{6,18}")
+        // (?![0-9]+$)(?![a-zA-Z]+$)
+        return isMatch("^[a-zA-Z0-9]{6,18}")
+        
     }
 }
 import CommonCrypto

@@ -36,6 +36,8 @@
 		B73DA39A2553E29400E3BB08 /* WLEndTaskTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B73DA3992553E29400E3BB08 /* WLEndTaskTableViewController.swift */; };
 		B73DA39F2553EA2E00E3BB08 /* WLSegmentBtnScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B73DA39E2553EA2E00E3BB08 /* WLSegmentBtnScrollView.swift */; };
 		B73DA3A42558D85800E3BB08 /* WLSegmentViewConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = B73DA3A32558D85800E3BB08 /* WLSegmentViewConfiguration.swift */; };
+		B77A9C792577849400A61DB0 /* WLApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = B77A9C782577849400A61DB0 /* WLApi.swift */; };
+		B77A9C7E257892F800A61DB0 /* WLDefaultUsers.swift in Sources */ = {isa = PBXBuildFile; fileRef = B77A9C7D257892F800A61DB0 /* WLDefaultUsers.swift */; };
 		B77DE274255E783A002281CE /* WLLoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B77DE271255E783A002281CE /* WLLoginViewController.swift */; };
 		B77DE2A9255E7CF3002281CE /* Pods_ZDTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B77DE2A8255E7CF3002281CE /* Pods_ZDTest.framework */; };
 		B77DE2AA255E7CF3002281CE /* Pods_ZDTest.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B77DE2A8255E7CF3002281CE /* Pods_ZDTest.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
@@ -128,6 +130,8 @@
 		B73DA3992553E29400E3BB08 /* WLEndTaskTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WLEndTaskTableViewController.swift; sourceTree = "<group>"; };
 		B73DA39E2553EA2E00E3BB08 /* WLSegmentBtnScrollView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WLSegmentBtnScrollView.swift; sourceTree = "<group>"; };
 		B73DA3A32558D85800E3BB08 /* WLSegmentViewConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WLSegmentViewConfiguration.swift; sourceTree = "<group>"; };
+		B77A9C782577849400A61DB0 /* WLApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WLApi.swift; sourceTree = "<group>"; };
+		B77A9C7D257892F800A61DB0 /* WLDefaultUsers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WLDefaultUsers.swift; sourceTree = "<group>"; };
 		B77BFC8C25637075002BE07C /* Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "Bridging-Header.h"; path = "ZDTest/Bridging-Header.h"; sourceTree = SOURCE_ROOT; };
 		B77DE271255E783A002281CE /* WLLoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WLLoginViewController.swift; sourceTree = "<group>"; };
 		B77DE278255E7927002281CE /* Pods_ZDTest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Pods_ZDTest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -196,6 +200,7 @@
 		A830105F254D667800E68C2A /* Expand */ = {
 			isa = PBXGroup;
 			children = (
+				B77A9C7C257892D700A61DB0 /* Tools */,
 				A8301094254D95CB00E68C2A /* BaseClass */,
 				A8301084254D6BF900E68C2A /* Category */,
 				A8301083254D6BF900E68C2A /* UnitilMacros */,
@@ -250,6 +255,7 @@
 			children = (
 				A830108A254D6CC100E68C2A /* FontAndColorMacro.swift */,
 				A830108F254D6D9500E68C2A /* Macro.swift */,
+				B77A9C782577849400A61DB0 /* WLApi.swift */,
 			);
 			path = UnitilMacros;
 			sourceTree = "<group>";
@@ -401,6 +407,14 @@
 				B73DA39E2553EA2E00E3BB08 /* WLSegmentBtnScrollView.swift */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		B77A9C7C257892D700A61DB0 /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+				B77A9C7D257892F800A61DB0 /* WLDefaultUsers.swift */,
+			);
+			path = Tools;
 			sourceTree = "<group>";
 		};
 		B77DE26E255E783A002281CE /* Login */ = {
@@ -713,6 +727,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B77A9C792577849400A61DB0 /* WLApi.swift in Sources */,
 				B73DA39A2553E29400E3BB08 /* WLEndTaskTableViewController.swift in Sources */,
 				B7131637254FDC8C00CDBB16 /* UIView+.swift in Sources */,
 				A8E01BE5254CFFF80058FA72 /* AppDelegate.swift in Sources */,
@@ -725,6 +740,7 @@
 				B7EEB8652564B31B008C3ADC /* WLLoginViewModel.swift in Sources */,
 				B73DA38D25528C3500E3BB08 /* WLSegmentBaseViewController.swift in Sources */,
 				A830109D254D962800E68C2A /* WLBaseViewController.swift in Sources */,
+				B77A9C7E257892F800A61DB0 /* WLDefaultUsers.swift in Sources */,
 				B73DA39F2553EA2E00E3BB08 /* WLSegmentBtnScrollView.swift in Sources */,
 				A83010BA254DAA4F00E68C2A /* String+.swift in Sources */,
 				B7EEB85B25637A33008C3ADC /* MBProgressHUD+.swift in Sources */,
