@@ -21,6 +21,9 @@ class WLQiShiTaskViewController: WLBaseViewController {
 
         // Do any additional setup after loading the view.
         self.view.addSubview(self.tableView)
+        
+        
+        
     }
     
 

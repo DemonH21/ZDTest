@@ -13,6 +13,7 @@ let Color_Base = UIColor(hexString: "29a1f7")
 let Color_Black = UIColor(hexString: "333333")
 let Color_MinBlack = UIColor(hexString: "666666")
 let Color_separateLine = UIColor(hexString: "dddddd")
+let Color_Red = UIColor(hexString: "F75B47")
 
 let Color_default_background = UIColor(hexString: "efeff4")
 

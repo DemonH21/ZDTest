@@ -17,7 +17,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Override point for customization after application launch.
         if #available(iOS 13.0, *) {
             
-        }else{
+        }else{	
             self.window = UIWindow.init(frame: UIScreen.main.bounds)
             let homeVc = WLHomeViewController()
             self.window?.rootViewController = homeVc
@@ -31,7 +31,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     // MARK: UISceneSession Lifecycle
 
     //  这是测试测试测试
-    // 呵呵呵这也是测试
 
     @available(iOS 13.0, *)
     func application(_ application: UIApplication, configurationForConnecting connectingSceneSession: UISceneSession, options: UIScene.ConnectionOptions) -> UISceneConfiguration {

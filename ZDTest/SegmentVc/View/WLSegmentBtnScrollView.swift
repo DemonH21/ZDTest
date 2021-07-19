@@ -44,6 +44,10 @@ class WLSegmentBtnScrollView: UIView {
         
         
     }
+    //MARK: -
+    //FIXME:--
+    //TODO:----
+    //WARNNING:
     func setup(){
         self.addSubview(self.scrollView)
         
