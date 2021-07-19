@@ -16,7 +16,7 @@ class WLHomeTabbarController: UITabBarController {
 //        self.setBarItem()
         self.setTabbarViewControllers()
         self.view.backgroundColor = Color_White
-        UITabBar.appearance().tintColor = Color_White
+//        UITabBar.appearance().tintColor = Color_White
         UITabBar.appearance().isTranslucent = false
     }
     

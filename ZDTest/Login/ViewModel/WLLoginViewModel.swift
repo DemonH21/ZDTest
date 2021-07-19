@@ -7,6 +7,7 @@
 
 import UIKit
 import Moya
+import Alamofire
 class WLLoginViewModel: NSObject {
     
     func login(phoneNum: String, password: String, type: String, completion: @escaping (_ response: [String: Any]) -> ()) {
