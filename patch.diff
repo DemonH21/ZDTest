@@ -1,0 +1,24 @@
+From 4a8c98e511628897e7b7cc11af8ab2f4e83e97dc Mon Sep 17 00:00:00 2001
+From: kede Han <hankd_721@foxmail.com>
+Date: Wed, 21 Jul 2021 16:53:31 +0800
+Subject: [PATCH] this 2
+
+---
+ ZDTest/AppDelegate.swift | 1 +
+ 1 file changed, 1 insertion(+)
+
+diff --git a/ZDTest/AppDelegate.swift b/ZDTest/AppDelegate.swift
+index cb346fc..7a41855 100644
+--- a/ZDTest/AppDelegate.swift
++++ b/ZDTest/AppDelegate.swift
+@@ -32,6 +32,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
+     //  这是测试测试测试
+     // 呵呵呵这也是测试
+     //这是1
++    //这是2
+     @available(iOS 13.0, *)
+     func application(_ application: UIApplication, configurationForConnecting connectingSceneSession: UISceneSession, options: UIScene.ConnectionOptions) -> UISceneConfiguration {
+         // Called when a new scene session is being created.
+-- 
+2.8.1
+
