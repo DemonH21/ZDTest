@@ -33,6 +33,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     // 呵呵呵这也是测试
     //这是1
     //这是2
+    //这是3
     @available(iOS 13.0, *)
     func application(_ application: UIApplication, configurationForConnecting connectingSceneSession: UISceneSession, options: UIScene.ConnectionOptions) -> UISceneConfiguration {
         // Called when a new scene session is being created.
