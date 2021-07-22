@@ -25,5 +25,6 @@
     // dfakdjfljks test1
     
     NSLog(@"test1");
+    NSLog(@"test2");
 }
 @end
