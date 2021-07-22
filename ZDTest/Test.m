@@ -23,5 +23,7 @@
     NSLog(@"name:%@",name);
     NSLog(@"age:%d", age);
     // dfakdjfljks test1
+    
+    NSLog(@"test1");
 }
 @end
