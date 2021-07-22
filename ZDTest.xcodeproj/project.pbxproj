@@ -39,6 +39,7 @@
 		B750A42B2592EDEF00B50BAC /* WLBaseTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B750A42A2592EDEF00B50BAC /* WLBaseTableViewController.swift */; };
 		B77A9C792577849400A61DB0 /* WLApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = B77A9C782577849400A61DB0 /* WLApi.swift */; };
 		B77A9C7E257892F800A61DB0 /* WLDefaultUsers.swift in Sources */ = {isa = PBXBuildFile; fileRef = B77A9C7D257892F800A61DB0 /* WLDefaultUsers.swift */; };
+		B77C990C26A9615A00A1AF3B /* Test2.m in Sources */ = {isa = PBXBuildFile; fileRef = B77C990B26A9615A00A1AF3B /* Test2.m */; };
 		B77DE0BB2603438B00D57972 /* TestFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = B77DE0BA2603438B00D57972 /* TestFile.swift */; };
 		B77DE274255E783A002281CE /* WLLoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B77DE271255E783A002281CE /* WLLoginViewController.swift */; };
 		B77DE2A9255E7CF3002281CE /* Pods_ZDTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B77DE2A8255E7CF3002281CE /* Pods_ZDTest.framework */; };
@@ -136,6 +137,8 @@
 		B77A9C782577849400A61DB0 /* WLApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WLApi.swift; sourceTree = "<group>"; };
 		B77A9C7D257892F800A61DB0 /* WLDefaultUsers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WLDefaultUsers.swift; sourceTree = "<group>"; };
 		B77BFC8C25637075002BE07C /* Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "Bridging-Header.h"; path = "ZDTest/Bridging-Header.h"; sourceTree = SOURCE_ROOT; };
+		B77C990A26A9615A00A1AF3B /* Test2.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Test2.h; sourceTree = "<group>"; };
+		B77C990B26A9615A00A1AF3B /* Test2.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Test2.m; sourceTree = "<group>"; };
 		B77DE0BA2603438B00D57972 /* TestFile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestFile.swift; sourceTree = "<group>"; };
 		B77DE271255E783A002281CE /* WLLoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WLLoginViewController.swift; sourceTree = "<group>"; };
 		B77DE278255E7927002281CE /* Pods_ZDTest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Pods_ZDTest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -357,6 +360,8 @@
 				A8301060254D668400E68C2A /* Home */,
 				A830105F254D667800E68C2A /* Expand */,
 				A8E01BE4254CFFF80058FA72 /* AppDelegate.swift */,
+				B77C990A26A9615A00A1AF3B /* Test2.h */,
+				B77C990B26A9615A00A1AF3B /* Test2.m */,
 				A8E01BE6254CFFF80058FA72 /* SceneDelegate.swift */,
 				B77BFC8C25637075002BE07C /* Bridging-Header.h */,
 				A8E01BED254CFFFE0058FA72 /* Assets.xcassets */,
@@ -748,6 +753,7 @@
 				B7EEB8652564B31B008C3ADC /* WLLoginViewModel.swift in Sources */,
 				B73DA38D25528C3500E3BB08 /* WLSegmentBaseViewController.swift in Sources */,
 				A830109D254D962800E68C2A /* WLBaseViewController.swift in Sources */,
+				B77C990C26A9615A00A1AF3B /* Test2.m in Sources */,
 				B77A9C7E257892F800A61DB0 /* WLDefaultUsers.swift in Sources */,
 				B73DA39F2553EA2E00E3BB08 /* WLSegmentBtnScrollView.swift in Sources */,
 				A83010BA254DAA4F00E68C2A /* String+.swift in Sources */,
