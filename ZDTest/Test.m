@@ -16,5 +16,7 @@
     // Drawing code
 }
 */
-
+- (void)testC{
+    
+}
 @end
