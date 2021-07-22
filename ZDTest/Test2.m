@@ -15,6 +15,11 @@
 - (void)drawRect:(CGRect)rect {
     // Drawing code
 }
+<<<<<<< HEAD
 */
+
+- (void)test3{
+    
+}
 
 @end
