@@ -22,5 +22,6 @@
      NSInteger age = 20; 
     NSLog(@"name:%@",name);
     NSLog(@"age:%d", age);
+    // dfakdjfljks test1
 }
 @end
