@@ -20,5 +20,7 @@
     //这是测试而已  ---1
      NSString *name = @"name1";
      NSInteger age = 20; 
+    NSLog(@"name:%@",name);
+    NSLog(@"age:%d", age);
 }
 @end
