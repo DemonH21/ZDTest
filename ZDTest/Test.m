@@ -17,6 +17,8 @@
 }
 */
 - (void)testC{
-    
+    //这是测试而已  ---1
+     NSString *name = @"name1";
+     NSInteger age = 20; 
 }
 @end
