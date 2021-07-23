@@ -21,4 +21,7 @@
 - (void)test4{
     NSLog(@"test5");
 }
+- (void)test6{
+    
+}
 @end
