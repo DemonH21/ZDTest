@@ -9,6 +9,7 @@
 
 @implementation Test2
 
+
 /*
 // Only override drawRect: if you perform custom drawing.
 // An empty implementation adversely affects performance during animation.
@@ -17,6 +18,11 @@
 }
 <<<<<<< HEAD
 */
+
+
+- (void)test1{
+    
+}
 
 - (void)test3{
     NSString *longStr = @"@implementation Test2";

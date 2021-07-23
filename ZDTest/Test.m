@@ -20,5 +20,14 @@
     //这是测试而已  ---1
      NSString *name = @"name1";
      NSInteger age = 20; 
+<<<<<<< HEAD
+=======
+    NSLog(@"name:%@",name);
+    NSLog(@"age:%d", age);
+    // dfakdjfljks test1
+    
+    NSLog(@"test1");
+    NSLog(@"test2");
+>>>>>>> TestBranch
 }
 @end

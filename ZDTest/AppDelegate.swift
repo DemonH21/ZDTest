@@ -32,7 +32,23 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     //  这是测试测试测试
+<<<<<<< HEAD
 
+=======
+    // 呵呵呵这也是测试
+    //这是1
+    //这是2
+    //这是3
+    // lklkl
+    // dsfd
+    func test() {
+        
+    }
+    //dfsfd
+    func test1() {
+        
+    }
+>>>>>>> TestBranch
     @available(iOS 13.0, *)
     func application(_ application: UIApplication, configurationForConnecting connectingSceneSession: UISceneSession, options: UIScene.ConnectionOptions) -> UISceneConfiguration {
         // Called when a new scene session is being created.
