@@ -36,4 +36,7 @@
 - (void)aaa1{
     
 }
+- (void)aaa2{
+    
+}
 @end
