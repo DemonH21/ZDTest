@@ -17,4 +17,8 @@
     NSLog(@"longStr:%@", longStr);
     //ceshi2
 }
+
+- (void)test4{
+    
+}
 @end
