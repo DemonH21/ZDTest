@@ -30,10 +30,19 @@
     //ceshi2
 }
 
-- (void)test7{
+
+- (void)test4{
+    NSLog(@"test5");
+}
+- (void)test6{
+    
+}
+- (void)test8{
+
     
 }
 - (void)test9{
     NSLog(@"test9");
 }
+
 @end
