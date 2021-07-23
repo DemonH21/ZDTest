@@ -30,5 +30,7 @@
     //ceshi2
 }
 
-
+- (void)test7{
+    
+}
 @end
