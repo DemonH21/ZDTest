@@ -34,6 +34,6 @@
     
 }
 - (void)test9{
-    
+    NSLog(@"test9");
 }
 @end
