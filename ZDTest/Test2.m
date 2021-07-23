@@ -19,6 +19,6 @@
 }
 
 - (void)test4{
-    
+    NSLog(@"test5");
 }
 @end
