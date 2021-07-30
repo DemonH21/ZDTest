@@ -44,7 +44,24 @@
 - (void)test9{
     NSLog(@"test9");
 }
+<<<<<<< HEAD
 // 呵呵  这是测试啊
 // 恩恩额  这是啥
 // amend
+=======
+// 这是测试一
+// 这是测试二
+// 这是测试三
+- (void)aaa1{
+    
+}
+- (void)aaa2{
+    
+}
+- (void)aaa3{
+    
+}
+// 测试啊
+// 一样
+>>>>>>> TestBranch
 @end
