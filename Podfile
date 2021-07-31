@@ -8,6 +8,8 @@ target 'ZDTest' do
   pod 'Alamofire', '~> 5.3.0'
   pod 'ByebyeUnicode'
   pod 'MBProgressHUD'
+  pod 'Moya'
+  
 
   target 'ZDTestTests' do 
     

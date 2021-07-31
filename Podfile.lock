@@ -2,12 +2,17 @@ PODS:
   - Alamofire (5.3.0)
   - ByebyeUnicode (1.1.0)
   - MBProgressHUD (1.2.0)
+  - Moya (14.0.0):
+    - Moya/Core (= 14.0.0)
+  - Moya/Core (14.0.0):
+    - Alamofire (~> 5.0)
   - SnapKit (4.2.0)
 
 DEPENDENCIES:
   - Alamofire (~> 5.3.0)
   - ByebyeUnicode
   - MBProgressHUD
+  - Moya
   - SnapKit (~> 4.2.0)
 
 SPEC REPOS:
@@ -15,14 +20,16 @@ SPEC REPOS:
     - Alamofire
     - ByebyeUnicode
     - MBProgressHUD
+    - Moya
     - SnapKit
 
 SPEC CHECKSUMS:
   Alamofire: 2c792affbdc2f18016e08fdbcacd60aebe1ba593
   ByebyeUnicode: 517bc2fc166129f2de7acdd31704b97f83eed5e9
   MBProgressHUD: 3ee5efcc380f6a79a7cc9b363dd669c5e1ae7406
+  Moya: 5b45dacb75adb009f97fde91c204c1e565d31916
   SnapKit: fe8a619752f3f27075cc9a90244d75c6c3f27e2a
 
-PODFILE CHECKSUM: c73be8a88e4195a924071366639fdcd408f0efdd
+PODFILE CHECKSUM: 0754cd9321755d2913832c283f0266acc18ece2e
 
 COCOAPODS: 1.10.0

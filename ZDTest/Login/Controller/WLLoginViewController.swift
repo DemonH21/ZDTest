@@ -7,8 +7,25 @@
 
 import UIKit
 import SnapKit
-//import Alamofire
+import Alamofire
+import Moya
 //import MBProgressHUD
+enum WearAble {
+    enum Weight: Int {
+        case Light = 1
+    }
+    enum Armor: Int {
+        case Light = 2
+    }
+    case Helmet(weight: Weight, armor: Armor)
+    func attributes() -> (weight: Int, armor: Int) {
+        switch self {
+        case .Helmet(let w, let a):
+            return (weight: w.rawValue * 2, armor: a.rawValue * 4)
+        }
+        
+    }
+}
 class WLLoginViewController: WLBaseViewController {
 
     lazy var scrollView: UIScrollView = {
@@ -32,39 +49,25 @@ class WLLoginViewController: WLBaseViewController {
         setup()
         let tapG = UITapGestureRecognizer(target: self, action: #selector(wl_dismissKeyBoard(gues:)))
         scrollView.addGestureRecognizer(tapG)
-        var some = 12
-        var other = 13
-        swapTwoValue(a: &some, b: &other)
-        print("some: \(some), other: \(other)")
         
-        var some1 = "hello"
-        var other1 = "world"
-        swapTwoValue(a: &some1, b: &other1)
-        print("some: \(some1), other: \(other1)")
-        let arr = ["some", "body", "other", "girl", "boy"]
-        let findV = "body"
-        let index = findSameType(arr: arr, findValue: findV)
-        print(index as Any)
-        let douArr = [3.13, 34, 54, 65]
-        let findV1 = 54.0
-        let index1 = findSameType(arr: douArr, findValue: findV1)
-        print(index1)
+
         
-    }
-    
-    
-    func swapTwoValue<T>(a: inout T, b: inout T) {
-        let temp = a
-        a = b
-        b = temp
-    }
-    func findSameType<T: Equatable>(arr: [T], findValue: T) -> Int? {
-        for (index, value) in arr.enumerated() {
-            if value == findValue {
-                return index
+        let params = ["currentPage": "1"]
+
+        let provider = MoyaProvider<WLApi>()
+        MBProgressHUD.showLoadingInWindow(message: "")
+        provider.request(.finish_list_short(params: params)) { (result) in
+            MBProgressHUD.hideHUD()
+            switch result {
+            
+            case .success(let response):
+                let data = try? response.mapJSON() as? NSDictionary
+                print(data!)
+            case .failure(let error):
+                print(error)
             }
         }
-        return nil
+        
     }
     
     override func viewDidLayoutSubviews() {
@@ -291,7 +294,10 @@ class WLLoginViewController: WLBaseViewController {
             MBProgressHUD.showInWindow(message: "请输入大于等于6位小于18位的密码")
             return
         }
-        
+        let viewModel = WLLoginViewModel()
+        viewModel.login(phoneNum: phoneTextField!.text!, password: codeTextField!.text!, type: "1") { response in 
+            print("------")
+        }
     }
 
     @objc func wl_dismissKeyBoard(gues: UITapGestureRecognizer) {
